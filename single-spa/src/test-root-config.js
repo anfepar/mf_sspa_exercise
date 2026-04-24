@@ -8,7 +8,7 @@ import microfrontendLayout from "./microfrontend-layout.html";
 
 const appUrls = {
   "@pizza/select": "http://localhost:3001/src/lifecycle.jsx",
-  "@pizza/payment": "http://localhost:3002/src/lifecyle.jsx",
+  "@pizza/payment": "http://localhost:3002/src/lifecycle.jsx",
   "@pizza/tracker": "http://localhost:3003/src/lifecycle.jsx",
 };
 
