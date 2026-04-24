@@ -1,0 +1,36 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  height: 60px;
+  background: #c0392b;
+  color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+}
+
+.brand {
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.steps {
+  display: flex;
+  gap: 1rem;
+}
+
+.step {
+  padding: 0.3rem 0.8rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  background: rgba(255, 255, 255, 0.15);
+  color: rgba(255, 255, 255, 0.75);
+  transition: background 0.2s, color 0.2s;
+}
+
+.step.active {
+  background: #fff;
+  color: #c0392b;
+  font-weight: 600;
+}

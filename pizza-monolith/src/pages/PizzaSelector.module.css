@@ -1,0 +1,151 @@
+.page {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 2rem 1rem 4rem;
+}
+
+.page h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #1a1a1a;
+}
+
+.section {
+  margin-top: 2rem;
+}
+
+.section h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #888;
+  margin-bottom: 1rem;
+}
+
+.pizzaGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.pizzaCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 1.2rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  background: #fff;
+  cursor: pointer;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  text-align: center;
+}
+
+.pizzaCard:hover {
+  border-color: #c0392b;
+}
+
+.pizzaCard.selected {
+  border-color: #c0392b;
+  box-shadow: 0 0 0 3px rgba(192, 57, 43, 0.15);
+}
+
+.emoji {
+  font-size: 2.5rem;
+}
+
+.description {
+  font-size: 0.8rem;
+  color: #888;
+}
+
+.sizeRow {
+  display: flex;
+  gap: 1rem;
+}
+
+.sizeBtn {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+  padding: 1rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  background: #fff;
+  cursor: pointer;
+  transition: border-color 0.2s;
+  font-size: 1rem;
+}
+
+.sizeBtn:hover {
+  border-color: #c0392b;
+}
+
+.sizeBtn.selected {
+  border-color: #c0392b;
+  box-shadow: 0 0 0 3px rgba(192, 57, 43, 0.15);
+}
+
+.inches {
+  font-size: 0.8rem;
+  color: #888;
+}
+
+.price {
+  font-weight: 700;
+  color: #c0392b;
+}
+
+.toppings {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.toppingLabel {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  cursor: pointer;
+  font-size: 0.95rem;
+  padding: 0.4rem 0.8rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 999px;
+  background: #fafafa;
+  transition: background 0.15s;
+}
+
+.toppingLabel:hover {
+  background: #fff0ef;
+}
+
+.toppingLabel input {
+  accent-color: #c0392b;
+}
+
+.continueBtn {
+  margin-top: 2.5rem;
+  width: 100%;
+  padding: 1rem;
+  background: #c0392b;
+  color: #fff;
+  font-size: 1.05rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.continueBtn:hover:not(:disabled) {
+  background: #a93226;
+}
+
+.continueBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
