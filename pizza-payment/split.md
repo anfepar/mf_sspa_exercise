@@ -15,13 +15,13 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  server: { port: <PORT> },
+  server: { port: <PORT> , cors: true},
 })
 ```
 
 #### 3. Copy code from the monolith
 1. Copy `src/index.css` to `src/index.css` in the pizza-payment app
-2. Copy `src/pages/PizzaSelector.jsx` to `src/App.jsx` in the pizza-payment app
+2.  Copy `src/pages/Payment.jsx` to `src/App.jsx` in the pizza-payment app, and change the name of the component for ```App```
 3. Copy `src/pages/Payment.module.css` to `src/App.module.css` in the pizza-payment app (rename the file from `App.css` to `App.module.css`)
 
 #### 4. Remove libs and fix references
